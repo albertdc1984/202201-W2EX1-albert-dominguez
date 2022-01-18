@@ -1,0 +1,22 @@
+{
+  "name": "202201-w2ex1-albert-dominguez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertdc1984/202201-W2EX1-albert-dominguez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertdc1984/202201-W2EX1-albert-dominguez/issues"
+  },
+  "homepage": "https://github.com/albertdc1984/202201-W2EX1-albert-dominguez#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
