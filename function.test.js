@@ -25,9 +25,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = true;
+      const magic1 = 1;
+      const magic2 = 1;
 
       // Act
-      const equalsCheck = strictEquals(1, 1);
+      const equalsCheck = strictEquals(magic1, magic2);
 
       // Assert
       expect(equalsCheck).toBe(expectedResult);
@@ -38,9 +40,11 @@ describe("Given a strictEquals function", () => {
     test("Then it should return false", () => {
       // Arrange
       const expectedResult = false;
+      const magic1 = NaN;
+      const magic2 = NaN;
 
       // Act
-      const equalsCheck = strictEquals(NaN, NaN);
+      const equalsCheck = strictEquals(magic1, magic2);
 
       // Assert
       expect(equalsCheck).toBe(expectedResult);
@@ -52,9 +56,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = true;
+      const magic1 = 0;
+      const magic2 = -0;
 
       // Act
-      const equalsCheck = strictEquals(0, -0);
+      const equalsCheck = strictEquals(magic1, magic2);
 
       // Assert
       expect(equalsCheck).toBe(expectedResult);
@@ -66,9 +72,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = true;
+      const magic1 = -0;
+      const magic2 = 0;
 
       // Act
-      const equalsCheck = strictEquals(-0, 0);
+      const equalsCheck = strictEquals(magic1, magic2);
 
       // Assert
       expect(equalsCheck).toBe(expectedResult);
@@ -80,10 +88,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = false;
+      const magic1 = 1;
+      const magic2 = "1";
 
       // Act
-      const equalsCheck = strictEquals(1, "1");
-
+      const equalsCheck = strictEquals(magic1, magic2);
       // Assert
       expect(equalsCheck).toBe(expectedResult);
     });
@@ -93,9 +102,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = false;
+      const magic1 = true;
+      const magic2 = false;
 
       // Act
-      const equalsCheck = strictEquals(true, false);
+      const equalsCheck = strictEquals(magic1, magic2);
 
       // Assert
       expect(equalsCheck).toBe(expectedResult);
@@ -106,10 +117,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = true;
+      const magic1 = false;
+      const magic2 = false;
 
       // Act
-      const equalsCheck = strictEquals(false, false);
-
+      const equalsCheck = strictEquals(magic1, magic2);
       // Assert
       expect(equalsCheck).toBe(expectedResult);
     });
@@ -119,10 +131,11 @@ describe("Given a strictEquals function", () => {
       // Arrange
 
       const expectedResult = false;
+      const magic1 = "Water";
+      const magic2 = "Oil";
 
       // Act
-      const equalsCheck = strictEquals("Water", "Oil");
-
+      const equalsCheck = strictEquals(magic1, magic2);
       // Assert
       expect(equalsCheck).toBe(expectedResult);
     });
